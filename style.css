@@ -58,6 +58,11 @@ html , body {
 }
 
 #pbtm{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* 1. Default value of this is no wrap 
+                        2. This is use because it helps the bubble to switch to another line . */
+                        
     padding: 20px;
     width: 100%;
     height: calc(100% - 100px); /* This is a function which is used to calcuate the value and also do some calculation between percentage and pixel .*/ 
