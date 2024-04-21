@@ -1,5 +1,5 @@
 /*This Code run Timer  */
-var timer = 60 ;
+var timer = 6 ;
 var score = 0;
 var hitrn = 0 ;
 
@@ -19,6 +19,7 @@ function runTimer(){
 
         else{
             clearInterval(timerinterval);
+            document.querySelector("#pbtm").innerHTML = "";
         }
    
     }, 1000);
