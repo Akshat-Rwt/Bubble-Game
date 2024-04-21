@@ -1,3 +1,19 @@
+/*This Code run Timer  */
+var timer = 60 ;
+function runTimer(){
+    var timerinterval = setInterval(function() {
+
+        if(timer > 0) {
+            timer--;
+            document.querySelector("#timerval").textContent = timer;
+        }
+
+        else{
+            clearInterval(timerinterval);
+        }
+   
+    }, 1000);
+}
 /*This Code Make Bubble  */
 
 function makeBubble(){
@@ -21,25 +37,15 @@ document.querySelector("#pbtm").innerHTML = clutter ;
 
 }
 
-/*This Code run Timer  */
-var timer = 2;
-function runTimer(){
-    var timerinterval = setInterval(() => {
-
-        if(timer > 0) {
-            timer--;
-            document.querySelector("#timerval").textContent = timer;
-        }
-
-        else{
-            clearInterval(timerinterval);
-        }
-   
-    }, 1000);
+function getNewHit(){
+    var rn =Math.floor(Math.random()*10);
+    document.querySelector("#hitval").textContent = rn;
 }
+
 
 runTimer();
 makeBubble();
+getNewHit();
 
 
 
