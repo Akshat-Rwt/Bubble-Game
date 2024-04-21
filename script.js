@@ -2,6 +2,8 @@
 var timer = 60 ;
 var score = 0;
 
+// jispe click kroge vo element par event raise hoga , aur event listener naa milne par event element ke parent par listener dhundhega , waha bhi naa milne par event parent ke parent par listener dhundega 
+
 function increaseScore(){
     score += 10;
     document.querySelector("#scoreval").textContent = score ;
@@ -47,6 +49,11 @@ function getNewHit(){
     var rn =Math.floor(Math.random()*10);
     document.querySelector("#hitval").textContent = rn;
 }
+
+document.querySelector("#pbtm")
+.addEventListener("click",function(dets){
+    
+})
 
 
 runTimer();
