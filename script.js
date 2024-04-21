@@ -1,9 +1,9 @@
 /*This Code run Timer  */
-var timer = 6 ;
+var timer = 10;
 var score = 0;
 var hitrn = 0 ;
 
-// jispe click kroge vo element par event raise hoga , aur event listener naa milne par event element ke parent par listener dhundhega , waha bhi naa milne par event parent ke parent par listener dhundega 
+// jispe click kroge vo element par event raise hoga , aur event listener naa milne. par event element ke parent par listener dhundhega , waha bhi naa milne par event parent ke parent par listener dhundega 
 
 function increaseScore(){
     score += 10;
