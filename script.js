@@ -52,7 +52,8 @@ function getNewHit(){
 
 document.querySelector("#pbtm")
 .addEventListener("click",function(dets){
-    
+    console.log(dets.target);
+
 })
 
 
