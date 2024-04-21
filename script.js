@@ -1,6 +1,7 @@
 /*This Code run Timer  */
 var timer = 60 ;
 var score = 0;
+var hitrn = 0 ;
 
 // jispe click kroge vo element par event raise hoga , aur event listener naa milne par event element ke parent par listener dhundhega , waha bhi naa milne par event parent ke parent par listener dhundega 
 
@@ -46,8 +47,8 @@ document.querySelector("#pbtm").innerHTML = clutter ;
 }
 
 function getNewHit(){
-    var rn =Math.floor(Math.random()*10);
-    document.querySelector("#hitval").textContent = rn;
+    hitrn =Math.floor(Math.random()*10);
+    document.querySelector("#hitval").textContent = hitrn;
 }
 
 document.querySelector("#pbtm")
