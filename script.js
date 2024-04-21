@@ -54,8 +54,12 @@ function getNewHit(){
 document.querySelector("#pbtm")
 .addEventListener("click",function(dets){
     var clickedNum = Number(dets.target.textContent);
-
-})
+    if(clickedNum == hitrn){
+        increaseScore();
+        makeBubble();
+        getNewHit(); 
+    }
+});
 
 
 runTimer();
