@@ -1,4 +1,7 @@
-var clutter = "" ;
+/*This Code Make Bubble  */
+
+function makeBubble(){
+    var clutter = "" ;
 
 
 for(var i = 1 ; i <= 133 ; i++){
@@ -15,3 +18,10 @@ for(var i = 1 ; i <= 133 ; i++){
 }
 
 document.querySelector("#pbtm").innerHTML = clutter ;
+
+}
+
+makeBubble();
+
+
+
