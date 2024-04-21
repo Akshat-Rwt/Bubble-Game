@@ -19,7 +19,8 @@ function runTimer(){
 
         else{
             clearInterval(timerinterval);
-            document.querySelector("#pbtm").innerHTML = "";
+            document.querySelector("#pbtm").innerHTML = `<h1>Game Over<h1>`;
+            document.querySelector("#hitval").innerHTML = 0;
         }
    
     }, 1000);
