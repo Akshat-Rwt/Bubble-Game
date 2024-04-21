@@ -21,7 +21,27 @@ document.querySelector("#pbtm").innerHTML = clutter ;
 
 }
 
+/*This Code run Timer  */
+var timer = 2;
+function runTimer(){
+    var timerinterval = setInterval(() => {
+
+        if(timer > 0) {
+            timer--;
+            document.querySelector("#timerval").textContent = timer;
+        }
+
+        else{
+            clearInterval(timerinterval);
+        }
+   
+    }, 1000);
+}
+
+runTimer();
 makeBubble();
+
+
 
 
 
